@@ -1,0 +1,40 @@
+.left-nav ul {
+    list-style: none;
+}
+
+.left-nav a {
+    display: block;
+    text-decoration: none;
+    color: #666;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    transition: .3s;
+}
+
+.left-nav a:hover {
+    margin-left: 20px;
+
+}
+
+.left-nav a.active {
+    color: #1e3799;
+    border-left: 10px solid #666;
+    margin-left: 0;
+}
+
+.left-nav li:nth-child(1) a.active {
+    border-left-color: rgb(212, 26, 156);
+}
+
+.left-nav li:nth-child(2) a.active {
+    border-left-color: rgb(22, 224, 197);
+}
+
+.left-nav li:nth-child(3) a.active {
+    border-left-color: rgb(190, 238, 57);
+}
+
+.left-nav li:nth-child(4) a.active {
+    border-left-color: rgb(205, 18, 29);
+}
