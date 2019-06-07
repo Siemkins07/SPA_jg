@@ -1,0 +1,25 @@
+article {
+    margin-top: 40px;
+}
+
+span {
+    font-weight: normal;
+    text-transform: none;
+}
+
+h3 {
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.read-more-button {
+    color: #62B5DF;
+    text-decoration: underline;
+    font-size: 14px;
+    font-style: italic;
+
+}
+
+.displayed-text {
+    font-size: 18px;
+}
