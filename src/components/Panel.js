@@ -6,6 +6,7 @@ let permission = false;
 const Panel = () => {
 
 
+
     return (
 
         permission ? (<p>Witaj w panelu administratora :)</p>) : (<Redirect to="/login" />)

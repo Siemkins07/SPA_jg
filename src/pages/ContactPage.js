@@ -31,7 +31,7 @@ class ContactPage extends React.Component {
                 </form>
                 <Prompt
                     when={this.state.value !== ""}
-                    message={"Nie wysłałeś formularza. Na pewno chcesz opuścić stronę?"} />
+                    message={"Nie wysłałeś formularza. Na pewno chcesz teraz opuścić stronę?"} />
             </div>
         )
     };

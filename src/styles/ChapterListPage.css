@@ -1,0 +1,25 @@
+.chapters h3 {
+    margin-bottom: 20px;
+}
+
+.chapters ul {
+    list-style: none;
+    padding-left: 30px;
+}
+
+.chapters li {
+    line-height: 2;
+}
+
+.chapters a {
+    text-decoration: none;
+    color: #444;
+    transition: .3s;
+
+}
+
+.chapters a:hover {
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-left: 10px;
+}

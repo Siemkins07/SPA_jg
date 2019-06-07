@@ -1,0 +1,28 @@
+.login form {
+    width: 60%;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.login input {
+    margin: 10px;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+.login button {
+    display: block;
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+    background-color: #fff;
+}
+
+.login button:hover {
+    background-color: rgb(205, 18, 29);
+    color: white;
+    outline: none;
+}

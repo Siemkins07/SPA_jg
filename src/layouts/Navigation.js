@@ -7,6 +7,7 @@ const Navigation = () => {
     const navigationList = [
         { name: "start", path: "/", exact: true },
         { name: "książka", path: "/book" },
+        { name: "rozdziały", path: "/chapters" },
         { name: "kontakt", path: "/contact" },
         { name: "panel admina", path: "/admin" },
     ];

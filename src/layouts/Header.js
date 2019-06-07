@@ -19,8 +19,10 @@ const Header = () => {
                     </>
                 )} />
                 <Route path="/book" component={HeaderImage} />
+                <Route path="/chapters" component={HeaderImage} />
                 <Route path="/contact" component={HeaderImage} />
                 <Route path="/admin" component={HeaderImage} />
+                <Route path="/login" component={HeaderImage} />
                 <Route render={() => (
                     <img src={img0} alt='foto' />
                 )} />
