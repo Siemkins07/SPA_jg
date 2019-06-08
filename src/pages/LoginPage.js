@@ -1,65 +1,55 @@
 import React from 'react';
-import { Link, Redirect } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import '../styles/LoginPage.css'
 
 const login = 'admin';
 const password = 'admin';
-
-
 class LoginPage extends React.Component {
+
     state = {
         loginValue: '',
         passwordValue: '',
+        allow: false,
     }
-
     handleSubmit = (e) => {
         e.preventDefault();
         if (this.state.loginValue === login && this.state.passwordValue === password) {
-            // permission = true
-            console.log('ok');
-            return <Link to="/book" />
-            // <Redirect to='/admin' />
 
+            this.setState(state => ({
+                allow: !state.allow
+            }))
         } else {
             alert('niepoprawne dane');
         }
-
     }
 
     handleLoginChange = (e) => {
-
         this.setState({
             loginValue: e.target.value,
         })
     }
 
     handlePasswordChange = (e) => {
-
         this.setState({
             passwordValue: e.target.value
         })
-
     }
 
     render() {
         return (
-
             <div className='login'>
-                <form>
+                <form allow={String(this.state.allow)}>
                     <input value={this.state.loginValue} placeholder="Login" onChange={this.handleLoginChange} type="text" />
-
                     <br />
                     <input value={this.state.passwordValue} placeholder="Hasło" onChange={this.handlePasswordChange} type="password" />
                     <br />
-                    <button onClick={this.handleSubmit}>Zaloguj</button>
+                    <button onClick={this.handleSubmit.bind(this)}>Zaloguj</button>
+                    {this.state.allow ? <Redirect to='/admin' /> : null}
                 </form>
             </div>
-
         )
     }
 }
-
-
 
 export default LoginPage;
 
