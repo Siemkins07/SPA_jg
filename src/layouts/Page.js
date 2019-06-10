@@ -8,6 +8,7 @@ import ContactPage from '../pages/ContactPage';
 import AdminPage from '../pages/AdminPage';
 import LoginPage from '../pages/LoginPage';
 import ErrorPage from '../pages/ErrorPage';
+import Panel from '../components/Panel';
 
 const Page = () => {
     return (
@@ -18,7 +19,7 @@ const Page = () => {
                 <Route path='/chapters' component={ChapterListPage} />
                 <Route path='/chapter/:id' component={ChapterPage} />
                 <Route path="/contact" component={ContactPage} />
-                <Route path="/admin" component={AdminPage} />
+                <Route path="/admin" component={Panel} />
                 <Route path="/login" component={LoginPage} />
                 <Route component={ErrorPage} />
             </Switch>

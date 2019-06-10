@@ -9,7 +9,7 @@ const Navigation = () => {
         { name: "książka", path: "/book" },
         { name: "rozdziały", path: "/chapters" },
         { name: "kontakt", path: "/contact" },
-        { name: "panel admina", path: "/admin" },
+        { name: "panel admina", path: "/login" },
     ];
 
     const menu = navigationList.map(item => (
