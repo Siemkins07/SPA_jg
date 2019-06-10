@@ -5,12 +5,13 @@ import BookPage from '../pages/BookPage';
 import ChapterListPage from '../pages/ChapterListPage';
 import ChapterPage from '../pages/ChapterPage';
 import ContactPage from '../pages/ContactPage';
-import AdminPage from '../pages/AdminPage';
 import LoginPage from '../pages/LoginPage';
 import ErrorPage from '../pages/ErrorPage';
+import AdminPage from '../pages/AdminPage';
 import Panel from '../components/Panel';
 
-const Page = () => {
+const Page = (props) => {
+    console.log(props.allow + " props allow w page");
     return (
         <>
             <Switch>
@@ -19,8 +20,9 @@ const Page = () => {
                 <Route path='/chapters' component={ChapterListPage} />
                 <Route path='/chapter/:id' component={ChapterPage} />
                 <Route path="/contact" component={ContactPage} />
-                <Route path="/admin" component={Panel} />
-                <Route path="/login" component={LoginPage} />
+                <Route path="/admin" component={AdminPage} />
+                <Route path="/login" component={LoginPage} allow={props.allow} login={props.login} password={props.password} />
+                <Route path="/panel" component={Panel} allow={props.allow} login={props.login} password={props.password} />
                 <Route component={ErrorPage} />
             </Switch>
         </>

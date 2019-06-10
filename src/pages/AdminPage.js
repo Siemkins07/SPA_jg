@@ -1,22 +1,9 @@
-import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
-import Panel from '../components/Panel';
-import LoginPage from './LoginPage';
+import React from 'react';
 
-
-class AdminPage extends Component {
-    state = {
-        allow: false,
-    }
-    render() {
-        return (
-            <>
-                {this.state.allow ? <Route component={Panel} /> : <Route componet={LoginPage} />}
-
-            </>
-        );
-    }
-
+const AdminPage = () => {
+    return (
+        <p>Witaj w panelu administratora :)</p>
+    )
 }
 
 export default AdminPage;
