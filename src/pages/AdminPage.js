@@ -1,14 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const AdminPage = () => {
-    return (
-        <>
-            <p>Witaj w panelu administratora :)</p>
-            <Link to="/" exact='true'>
-                <button>Wyloguj</button>
-            </Link>
-        </>
-    )
+class AdminPage extends React.Component {
+    state = {}
+
+    handleLogOffClick = () => {
+        localStorage.clear()
+
+    }
+    render() {
+        return (
+            <>
+                <p>Witaj w panelu administratora :)</p>
+                <Link to="/" exact='true'>
+                    <button onClick={this.handleLogOffClick}>Wyloguj</button>
+                </Link>
+            </>
+        )
+    }
 }
 export default AdminPage;

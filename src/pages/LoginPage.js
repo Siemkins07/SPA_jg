@@ -21,6 +21,8 @@ class LoginPage extends React.Component {
         this.setState({
           allow: true
         })
+        this.save()
+
       } else {
         this.setState({
           login: "",
@@ -28,9 +30,9 @@ class LoginPage extends React.Component {
           allow: false,
           move: true,
         })
-        alert("niepoprawne dane")
+        // alert("niepoprawne dane")
       }
-    } else return
+    } else alert("login i hasło muszą składać się z co najmniej 3 znaków")
   }
 
   handleLoginChange = (e) => {
@@ -44,6 +46,29 @@ class LoginPage extends React.Component {
       password: e.target.value
     })
   }
+
+
+  save = () => {
+    const addToLocal = {
+      "Login": this.state.login,
+      "Password": this.state.password
+    }
+    localStorage.setItem(
+      'adminDate', JSON.stringify(addToLocal))
+  }
+
+
+  componentDidMount() {
+    if (localStorage.length) {
+      const date = JSON.parse(localStorage.getItem('adminDate'))
+      if (date.Login === UserLogin && date.Password === UserPassword) {
+        this.setState({
+          allow: true
+        })
+      }
+    } return
+  }
+
 
   render() {
     console.log(this.state.move + " move")
@@ -67,5 +92,6 @@ class LoginPage extends React.Component {
     )
   }
 }
+
 
 export default LoginPage;

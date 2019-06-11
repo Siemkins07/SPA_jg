@@ -22,7 +22,7 @@ class App extends Component {
               {<Navigation />}
             </aside>
             <section className='page'>
-              {<Page sub={this.handleSubmit} />}
+              {<Page />}
             </section>
           </main>
           <footer>
