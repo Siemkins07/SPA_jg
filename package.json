@@ -1,5 +1,6 @@
 {
   "name": "cra_jestem_graczem",
+  "homepage": "https://siemkins07.github.io/SPA_jg/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
