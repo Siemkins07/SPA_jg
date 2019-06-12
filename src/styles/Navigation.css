@@ -23,7 +23,7 @@
 }
 
 .left-nav li:nth-child(1) a.active {
-    border-left-color: rgb(212, 26, 156);
+    border-left-color: rgb(190, 238, 57);
 }
 
 .left-nav li:nth-child(2) a.active {
@@ -31,9 +31,13 @@
 }
 
 .left-nav li:nth-child(3) a.active {
-    border-left-color: rgb(190, 238, 57);
+    border-left-color: rgb(212, 26, 156);
 }
 
 .left-nav li:nth-child(4) a.active {
+    border-left-color: rgb(60, 99, 130);
+}
+
+.left-nav li:nth-child(5) a.active {
     border-left-color: rgb(205, 18, 29);
 }

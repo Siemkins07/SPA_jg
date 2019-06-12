@@ -1,0 +1,12 @@
+footer span {
+  color: orange;
+  text-transform: uppercase;
+}
+
+footer div {
+  text-transform: uppercase;
+}
+
+footer p {
+  text-transform: none;
+}

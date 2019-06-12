@@ -1,0 +1,21 @@
+.chapter {
+  margin: 10px 0;
+}
+
+.chapter p {
+  line-height: 1.5;
+}
+
+.chapter a {
+  text-decoration: none;
+}
+
+.chapter a strong {
+  text-decoration: none;
+  color: rgb(212, 26, 156);
+}
+
+.chapter p~a {
+  display: block;
+  margin: 20px 0;
+}

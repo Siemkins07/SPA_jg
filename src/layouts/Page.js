@@ -8,7 +8,7 @@ import ContactPage from '../pages/ContactPage';
 import LoginPage from '../pages/LoginPage';
 import ErrorPage from '../pages/ErrorPage';
 import AdminPage from '../pages/AdminPage';
-import FakePanelPage from '../pages/FakePanelPage';
+import NoAccessPage from '../pages/NoAccessPage';
 
 const Page = () => {
     return (
@@ -21,7 +21,7 @@ const Page = () => {
                 <Route path="/contact" component={ContactPage} />
                 <Route path="/admin" component={AdminPage} />
                 <Route path="/login" component={LoginPage} />
-                <Route path="/panel" component={FakePanelPage} />
+                <Route path="/panel" component={NoAccessPage} />
                 <Route component={ErrorPage} />
 
             </Switch>

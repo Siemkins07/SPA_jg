@@ -1,0 +1,23 @@
+.home span.header {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 72px;
+  background: -webkit-linear-gradient(-90deg, rgba(34, 193, 195, 1) 0%, rgba(245, 242, 33, 1) 35%, rgba(223, 235, 28, 1) 45%, rgba(223, 45, 60, 1) 80%, rgba(255, 10, 10, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home em {
+  color: rgb(60, 99, 130);
+}
+
+.home span {
+  color: red;
+}
+
+.home p {
+  line-height: 1.5;
+  margin: 16px 0;
+}

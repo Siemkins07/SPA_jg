@@ -13,10 +13,11 @@ h3 {
 }
 
 .read-more-button {
-    color: #62B5DF;
+    color: rgb(66, 174, 228);
     text-decoration: underline;
     font-size: 14px;
     font-style: italic;
+    font-weight: bold;
 
 }
 
