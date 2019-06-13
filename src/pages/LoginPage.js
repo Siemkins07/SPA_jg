@@ -47,7 +47,6 @@ class LoginPage extends React.Component {
     })
   }
 
-
   save = () => {
     const addToLocal = {
       "Login": this.state.login,
@@ -56,7 +55,6 @@ class LoginPage extends React.Component {
     localStorage.setItem(
       'adminDate', JSON.stringify(addToLocal))
   }
-
 
   componentDidMount() {
     if (localStorage.length) {
@@ -69,9 +67,7 @@ class LoginPage extends React.Component {
     } return
   }
 
-
   render() {
-    console.log(this.state.move + " move")
     return (
       <div className='login'>
         <form>
@@ -92,6 +88,5 @@ class LoginPage extends React.Component {
     )
   }
 }
-
 
 export default LoginPage;

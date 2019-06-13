@@ -19,11 +19,11 @@
     text-decoration: none;
     color: #444;
     transition: .3s;
-
 }
 
 .chapters a:hover {
     text-decoration: underline;
+    text-decoration-color: rgb(212, 26, 156);
     text-transform: uppercase;
     margin-left: 10px;
 }

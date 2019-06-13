@@ -18,7 +18,6 @@ const Navigation = () => {
         </li>
     ))
 
-
     return (
         <nav className="left-nav">
             <ul>

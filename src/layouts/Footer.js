@@ -5,7 +5,7 @@ import '../styles/Footer.css'
 const Footer = () => {
     return (
         <div>Copyright &#169; 2019 | Jacek Pobiarżyn
-            <Route path="/" exact render={(props) => (
+            <Route path="/" exact render={() => (
                 <p>Jesteś na stronie <span>głównej</span> </p>
             )}
             />

@@ -7,7 +7,7 @@
     width: 90%;
     min-height: 200px;
     margin: 20px 0;
-    /* display: block; */
+    padding: 15px;
     line-height: 1.6;
     border-radius: 4px;
 }
@@ -22,7 +22,6 @@
     cursor: pointer;
     font-size: 20px;
     transition: 0.3s;
-
 }
 
 .contact button:hover {

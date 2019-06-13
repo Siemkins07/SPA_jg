@@ -23,7 +23,6 @@ const Page = () => {
                 <Route path="/login" component={LoginPage} />
                 <Route path="/panel" component={NoAccessPage} />
                 <Route component={ErrorPage} />
-
             </Switch>
         </>
     );

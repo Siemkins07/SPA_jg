@@ -3,12 +3,11 @@ import { Link } from 'react-router-dom';
 import '../styles/AdminPage.css'
 
 class AdminPage extends React.Component {
-    state = {}
 
-    handleLogOffClick = () => {
+    handleLogoutClick = () => {
         localStorage.clear()
-
     }
+
     render() {
         return (
             <>
@@ -16,7 +15,7 @@ class AdminPage extends React.Component {
                     <h3>Witaj w panelu administratora</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab optio voluptatum aspernatur id quos est, magnam animi error excepturi maiores, commodi quam explicabo placeat ducimus officia nesciunt velit illum? Dolor.</p>
                     <Link to="/" exact='true'>
-                        <button onClick={this.handleLogOffClick}>Wyloguj</button>
+                        <button onClick={this.handleLogoutClick}>Wyloguj</button>
                     </Link>
                 </div>
             </>

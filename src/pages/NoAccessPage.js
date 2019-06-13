@@ -12,7 +12,6 @@ const FakePanelPage = () => {
                     <button>Zaloguj</button>
                 </Link>
             </div>
-
         </>
     )
 }
