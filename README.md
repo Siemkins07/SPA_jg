@@ -1,8 +1,10 @@
-##To do:
+## To do:
+
 mobile view
-hidding data;
-contact form;
-handling contact form.
+hidding data.<br>
+contact form. <br>
+handling contact form. <br>
+__________________________
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
