@@ -1,9 +1,15 @@
 ## To do:
 
 mobile view
-hidding data.<br>
-contact form. <br>
-handling contact form. <br>
+hidding data<br>
+contact form <br>
+handling contact form <br>
+
+## Data for log in for test:
+
+login: admin <br>
+password: admin <br>
+
 __________________________
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
